@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">splash</string>
+    <string name="drop_table_if_exists">drop table if EXISTS</string>
+    <string name="login_successfully">Login _ Successfully</string>
+</resources>

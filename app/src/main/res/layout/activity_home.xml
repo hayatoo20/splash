@@ -1,0 +1,98 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#044045"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="-300sp"
+        android:layout_marginBottom="-300sp"
+        android:background="#044045"
+        android:fadeScrollbars="true"
+        android:src="@drawable/logo"
+       />
+
+
+    <TextView
+        android:id="@+id/text_order"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="Home Page"
+        android:textColor="#FFFFF0"
+        android:textSize="34dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#044045">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/button2"
+                    android:layout_width="224dp"
+                    android:layout_height="169dp"
+                    android:layout_gravity="top"
+                    android:layout_marginVertical="0dp"
+
+                    android:background="@drawable/orderr"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.055"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/button1"
+                    android:layout_width="206dp"
+                    android:layout_height="201dp"
+                    android:layout_gravity="top"
+                    android:layout_marginVertical="0dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/abb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/button2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/button3"
+                    android:layout_width="193dp"
+                    android:layout_height="206dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginVertical="0dp"
+                    android:background="@drawable/co"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.964"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.993"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

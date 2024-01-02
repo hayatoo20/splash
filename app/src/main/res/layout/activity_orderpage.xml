@@ -1,0 +1,239 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#044045"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/t_order"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="Select Order"
+        android:textColor="#FFFFF0"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+
+    <EditText
+        android:id="@+id/name_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="20dp"
+        android:textSize="30dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/contact_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:hint="Contact No"
+        android:inputType="text"
+        android:minHeight="25dp"
+        android:textSize="30dp"
+        tools:ignore="Autofill,HardcodedText,SpUsage,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/order1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="Number of order for male 1"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="25dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage,TextContrastCheck,TextSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/order2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+
+        android:gravity="left"
+        android:hint="Number of order for male 2"
+        android:inputType="text"
+        android:minHeight="25dp"
+        android:textSize="25dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,SpUsage,TextContrastCheck,TouchTargetSizeCheck,TextSizeCheck,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="Your Total Price"
+        android:inputType="text"
+        android:minHeight="25dp"
+        android:textSize="35dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextContrastCheck,TextSizeCheck,TextViewEdits,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="ــــــــــــClick on Males to see detailsـــــــــ"
+        android:textColor="#FFFFF0"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#044045">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/ima_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="top"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/one"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,MissingConstraints,VisualLintBounds" />
+
+                <ImageView
+                    android:id="@+id/ima_2"
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="top"
+                    android:layout_marginVertical="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/two"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.392"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ima_1"
+                    app:layout_constraintVertical_bias="0.096"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+                <Button
+                    android:id="@+id/add_order"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/ima_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="320dp"
+                    android:text="Add"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.948"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ima_1"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="ExtraText,HardcodedText,MissingConstraints,RtlHardcoded,SpUsage,TextSizeCheck,VisualLintBounds" />
+
+                <Button
+                    android:id="@+id/update_order"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Update"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ima_2"
+                    app:layout_constraintVertical_bias="0.534"
+                    tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SpUsage,TextSizeCheck,VisualLintBounds"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <Button
+                    android:id="@+id/delete_order"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Delete"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.051"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/add_order"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,VisualLintBounds" />
+
+                <Button
+                    android:id="@+id/clear_r"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="48dp"
+                    android:text="Clear"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Back"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/delete_order"
+                    app:layout_constraintTop_toTopOf="@+id/update_order"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,VisualLintBounds" />
+
+                <Button
+                    android:id="@+id/Back"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:text="Back"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_order"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TouchTargetSizeCheck,UnknownId,VisualLintBounds" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

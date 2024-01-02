@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#044045"
+    tools:context=".Aboutus">
+
+    <ImageView
+        android:id="@+id/button3"
+        android:layout_width="410dp"
+        android:layout_height="660dp"
+        android:layout_gravity="bottom"
+        android:layout_marginVertical="0dp"
+        android:background="@drawable/aboutussone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="214dp" />
+
+    <Button
+        android:id="@+id/about_us"
+        android:layout_width="410dp"
+        android:layout_height="74dp"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="40dp"
+        android:background="#030A0B"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Back to Home Page"
+        android:textSize="30dp"/>
+
+</LinearLayout>
